@@ -18,11 +18,11 @@
 <body id="body" class="darkTheme">
 	<div class="wrapper">
 		<header>
-			<div class="header_container">
+			<div id="header" class="header_container">
 				<div id="burgerMenuIco" class="header_container-burgerMenuICO">
-					<div class="burgerMenuICO-1"></div>
-					<div class="burgerMenuICO-2"></div>
-					<div class="burgerMenuICO-3"></div>
+					<div id="burgerMenuICO-1" class="burgerMenuICO-1"></div>
+					<div id="burgerMenuICO-2" class="burgerMenuICO-2"></div>
+					<div id="burgerMenuICO-3" class="burgerMenuICO-3"></div>
 				</div>
 				<div id="burgerMenuNames" class="burgerMenuNames">
 					<a href="#burgerMenuIco">
@@ -43,9 +43,9 @@
 
 				</div>
 				<div id="switchTheme" class="themeSwither">
-					<div class="themeSwhither_background">
+					<div id="themeSwhither_background" class="themeSwhither_background">
 						<div id="themeSwithSune" class="themeSwhither_sune"></div>
-						<img class="themeLight" src="assets/img/Header/sun.svg" alt="">
+						<img id="themeSwitchSuneSvg" class="themeLight" src="assets/img/Header/sun.svg" alt="">
 						<img id="themeSwitchMoon" class="themeSwhither_moon" src="assets/img/Header/moon.svg" alt="moon">
 					</div>
 				</div>
@@ -56,22 +56,40 @@
 				<img src="assets/img/Resume/Avatar.png" alt="">
 			</div>
 			<div class="resume_text">
-				<h1 class="resume_name">Trubin Eduard</h1>
+				<h1 id="resume_name" class="resume_name">Trubin Eduard</h1>
 				<p class="resume_description">Graphic Designer</p>
 			</div>
-			<div class="resume_container-contacts">
-				<a href="https://www.behance.net/edwardtrubin" target="_blank">
-					<img src="assets/img/Resume/Behance.svg" alt="Behance">
-				</a>
-				<a href="mailto:edward.trubin@gmail.com">
-					<img src="assets/img/Resume/Email.svg" alt="Email">
-				</a>
-				<a href="tel:+48 793 005 868">
-					<img src="assets/img/Resume/Phone.svg" alt="Phone">
-				</a>
-				<a href="https://t.me/edleeb" target="_blank">
-					<img src="assets/img/Resume/Telegram.svg" alt="Telegram">
-				</a>
+			<div id="resume_container-contacts_dark">
+				<div class="resume_container-contacts">
+					<a href="https://www.behance.net/edwardtrubin" target="_blank">
+						<img src="assets/img/Resume/Behance.svg" alt="Behance">
+					</a>
+					<a href="mailto:edward.trubin@gmail.com">
+						<img src="assets/img/Resume/Email.svg" alt="Email">
+					</a>
+					<a href="tel:+48 793 005 868">
+						<img src="assets/img/Resume/Phone.svg" alt="Phone">
+					</a>
+					<a href="https://t.me/edleeb" target="_blank">
+						<img src="assets/img/Resume/Telegram.svg" alt="Telegram">
+					</a>
+				</div>
+			</div>
+			<div id="resume_container-contacts_white" class="display-none">
+				<div class="resume_container-contacts">
+					<a href="https://www.behance.net/edwardtrubin" target="_blank">
+						<img src="assets/img/Resume/contactICOWhite/Behance.svg" alt="Behance">
+					</a>
+					<a href="mailto:edward.trubin@gmail.com">
+						<img src="assets/img/Resume/contactICOWhite/Email.svg" alt="Email">
+					</a>
+					<a href="tel:+48 793 005 868">
+						<img src="assets/img/Resume/contactICOWhite/Phone.svg" alt="Phone">
+					</a>
+					<a href="https://t.me/edleeb" target="_blank">
+						<img src="assets/img/Resume/contactICOWhite/Phone.svg" alt="Telegram">
+					</a>
+				</div>
 			</div>
 			<div class="resume_button-link">
 				<a href="/">
@@ -88,7 +106,7 @@
 			</div>
 		</div>
 		<div class="aboutMe_container-wrapper">
-			<div class="aboutMe_container-wrapper-left">
+			<div id="aboutMe_container-wrapper-left" class="aboutMe_container-wrapper-left">
 				<div class="aboutMe_container-wrapper-left-up aboutMe_text-left-up">
 					<p>I strive to become a part of a <br> friendly and professional team in <br> order to develop corporate
 						<br> identity and improve graphic <br> communications of client <br> companies with consumers.</p>
@@ -141,128 +159,11 @@
 						</div>
 					</div>
 					<div class="aboutMe_right-languages-text">
-						<img src="assets/img/aboutMe/SVG%20Globus.svg" alt="globus">
+						<img src="assets/img/aboutMe/SVG%20Google%20translate.svg" alt="translate">
 						<div>
 							<p class="aboutMe_right-languages-what">Google translator</p>
 							<p class="aboutMe_right-languages-level">Excellent knowledge of how to <br> use the translator :)</p>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="mySkills" class="expertiseArea">
-			<div class="expertiseArea_container-tags">
-				<h1 class="expertiseArea_container-tags--smallTag">My intro</h1>
-				<h1 class="expertiseArea_container-tags--mainTag">My expertise Area</h1>
-			</div>
-			<div class="expertiseArea_container-graphics">
-				<div class="expertiseArea_container-graphics-container--left">
-					<h1 class="mainTag-graphic">Graphic design</h1>
-					<div class="graphic-container">
-						<div class="graphic-container-text">
-							<p>Figma</p>
-							<span class="interest"><p id="interest_1">70</p>%</span>
-						</div>
-						<div class="graphic-container-strip">
-							<div id="strip-background-1" class="graphic-container-strip-background"></div>
-						</div>
-					</div>
-					<div class="graphic-container">
-						<div class="graphic-container-text">
-							<p>Adobe Photoshop</p>
-							<span class="interest"><p id="interest_2">40</p>%</span>
-						</div>
-						<div class="graphic-container-strip">
-							<div id="strip-background-2" class="graphic-container-strip-background"></div>
-						</div>
-					</div>
-					<div class="graphic-container">
-						<div class="graphic-container-text">
-							<p>Microsoft PowerPoint</p>
-							<span class="interest"><p id="interest_3">45</p>%</span>
-						</div>
-						<div class="graphic-container-strip">
-							<div id="strip-background-3" class="graphic-container-strip-background"></div>
-						</div>
-					</div>
-				</div>
-				<div class="expertiseArea_container-graphics-container--right">
-					<h1 class="mainTag-graphic">Other skills</h1>
-					<div class="graphic-container">
-						<div class="graphic-container-text">
-							<p>Microsoft Excel</p>
-							<span class="interest"><p id="interest_4">40</p>%</span>
-						</div>
-						<div class="graphic-container-strip">
-							<div id="strip-background-4" class="graphic-container-strip-background"></div>
-						</div>
-					</div>
-					<div class="graphic-container">
-						<div class="graphic-container-text">
-							<p>Notion</p>
-							<span class="interest"><p id="interest_5">50</p>%</span>
-						</div>
-						<div class="graphic-container-strip">
-							<div id="strip-background-5" class="graphic-container-strip-background"></div>
-						</div>
-					</div>
-					<div class="graphic-container">
-						<div class="graphic-container-text">
-							<p>Microsoft Word</p>
-							<span class="interest"><p id="interest_6">30</p>%</span>
-						</div>
-						<div class="graphic-container-strip">
-							<div id="strip-background-6" class="graphic-container-strip-background"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="education">
-			<div class="education-containerText">
-				<h1 class="education-containerText_tag-small">Qualification</h1>
-				<h1 class="education-containerText_tag-big">My Education</h1>
-			</div>
-			<div class="education-containerWrapper">
-				<div class="education-container_leftSteps">
-					<div class="education-left-info">
-						<h1 class="education-left-info-main-tag">2022 - 2023</h1>
-						<p class="education-left-info-2-tag">TEB Edukacja</p>
-					</div>
-					<div class="education-left-info">
-						<h1 class="education-left-info-main-tag">2022 - 2023</h1>
-						<p class="education-left-info-2-tag">TEB Edukacja</p>
-					</div>
-					<div class="education-left-info">
-						<h1 class="education-left-info-main-tag">2022 - 2023</h1>
-						<p class="education-left-info-2-tag">TEB Edukacja</p>
-					</div>
-				</div>
-				<div class="education-container_centerSteps">
-					<div class="education-container_images">
-						<div class="education-container_image education-container_image-1">
-							<img src="assets/img/education/Square.svg" alt="Square">
-						</div>
-						<div class="education-container_image education-container_image-2">
-							<img src="assets/img/education/Square.svg" alt="Square">
-						</div>
-						<div class="education-container_image education-container_image-3">
-							<img src="assets/img/education/Square.svg" alt="Square">
-						</div>
-					</div>
-				</div>
-				<div class="education-container_rightSteps">
-					<div class="education-left-info">
-						<h1 class="education-left-info-main-tag">2022 - 2023</h1>
-						<p class="education-left-info-2-tag">TEB Edukacja</p>
-					</div>
-					<div class="education-left-info">
-						<h1 class="education-left-info-main-tag">2022 - 2023</h1>
-						<p class="education-left-info-2-tag">TEB Edukacja</p>
-					</div>
-					<div class="education-left-info">
-						<h1 class="education-left-info-main-tag">2022 - 2023</h1>
-						<p class="education-left-info-2-tag">TEB Edukacja</p>
 					</div>
 				</div>
 			</div>
@@ -272,8 +173,8 @@
 				<h1 class="works-container-tag-small">My portfolio</h1>
 				<h1 class="works-container-tag-big">Recent Works</h1>
 			</div>
-			<div class="works-container">
-				<div class="works_flex-containerUp">
+			<div id="works-container" class="works-container">
+				<div id="works_flex-containerUp" class="works_flex-containerUp">
 					<div class="imageContainer">
 						<a href="https://www.behance.net/gallery/153403819/Design-of-business-cards-and-brochures" target="_blank">
 							<img src="assets/img/works/1.jpg" alt="yellow card">
@@ -293,7 +194,7 @@
 					</div>
 
 				</div>
-				<div class="works_flex-containerUp">
+				<div id="works_flex-containerDown" class="works_flex-containerUp">
 					<div class="imageContainer">
 						<a href="https://www.behance.net/gallery/153404005/Design-of-business-cards-and-brochures" target="_blank">
 							<img src="assets/img/works/4.jpg" alt="yellow card">
@@ -305,9 +206,120 @@
 						</a>
 					</div>
 					<div class="imageContainer">
-						<a href="https://www.behance.net/gallery/153353383/Landing-page-for-diving-courses" target="_blank">+
+						<a href="https://www.behance.net/gallery/153353383/Landing-page-for-diving-courses" target="_blank">
 							<img src="assets/img/works/6.jpg" alt="yellow card">
 						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mySkills">
+			<div class="mySkills-tags">
+				<h1>Why Choose Me</h1>
+				<h1>My expertise Area</h1>
+			</div>
+			<div class="skills-Container">
+				<h1 class="mySkills-tag">Graphic design</h1>
+				<div class="mySkill-container">
+					<div class="mySkill-container-skill">
+						<div id="circle_1" class="mySkill-container-skill-circle mySkill-container-skill-circle-color-dark">
+							<img src="assets/img/mySkills/logos_figma.svg" alt="figma">
+						</div>
+						<div class="mySkill-container-skill-tag">
+							<p>Figma</p>
+						</div>
+					</div>
+					<div class="mySkill-container-skill">
+						<div id="circle_2" class="mySkill-container-skill-circle mySkill-container-skill-circle-color-dark">
+							<img src="assets/img/mySkills/PS.svg" alt="PS">
+						</div>
+						<div class="mySkill-container-skill-tag">
+							<p>Adobe Photoshop</p>
+						</div>
+					</div>
+					<div class="mySkill-container-skill">
+						<div id="circle_3" class="mySkill-container-skill-circle mySkill-container-skill-circle-color-dark">
+							<img src="assets/img/mySkills/vscode-icons_file-type-powerpoint.svg" alt="Microsoft PowerPoint">
+						</div>
+						<div class="mySkill-container-skill-tag">
+							<p>Microsoft PowerPoint</p>
+						</div>
+					</div>
+				</div>
+				<h1 class="mySkills-tag">Other skills</h1>
+				<div class="mySkill-container">
+					<div class="mySkill-container-skill">
+						<div id="circle_4" class="mySkill-container-skill-circle mySkill-container-skill-circle-color-dark">
+							<img src="assets/img/mySkills/vscode-icons_file-type-excel.svg" alt="exel">
+						</div>
+						<div class="mySkill-container-skill-tag">
+							<p>Microsoft Excel</p>
+						</div>
+					</div>
+					<div class="mySkill-container-skill">
+						<div id="circle_5" class="mySkill-container-skill-circle mySkill-container-skill-circle-color-dark">
+							<img id="Notion" class="Notion" src="assets/img/mySkills/notion.svg" alt="Notion">
+						</div>
+						<div class="mySkill-container-skill-tag">
+							<p>Notion</p>
+						</div>
+					</div>
+					<div class="mySkill-container-skill">
+						<div id="circle_6" class="mySkill-container-skill-circle mySkill-container-skill-circle-color-dark">
+							<img src="assets/img/mySkills/vscode-icons_file-type-word.svg" alt="Microsoft Word">
+						</div>
+						<div class="mySkill-container-skill-tag">
+							<p>Microsoft Word</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="education">
+			<div class="education-containerText">
+				<h1 class="education-containerText_tag-small">Qualification</h1>
+				<h1 class="education-containerText_tag-big">My Education</h1>
+			</div>
+			<div id="education-containerWrapper" class="education-containerWrapper">
+				<div class="education-container_leftSteps">
+					<div class="education-left-info">
+						<h1 class="education-left-info-main-tag">2022 - 2023</h1>
+						<p class="education-left-info-2-tag">TEB Edukacja</p>
+					</div>
+					<div class="education-left-info">
+						<h1 class="education-left-info-main-tag">2022 - 2023</h1>
+						<p class="education-left-info-2-tag">Cosinus Szkoła Policealna</p>
+					</div>
+					<div class="education-left-info">
+						<h1 class="education-left-info-main-tag">2022 - 2023</h1>
+						<p class="education-left-info-2-tag">Zespół Szkół nr 3</p>
+					</div>
+				</div>
+				<div class="education-container_centerSteps">
+					<div class="education-container_images">
+						<div class="education-container_image education-container_image-1">
+							<img src="assets/img/education/Square.svg" alt="Square">
+						</div>
+						<div class="education-container_image education-container_image-2">
+							<img src="assets/img/education/Square.svg" alt="Square">
+						</div>
+						<div class="education-container_image education-container_image-3">
+							<img src="assets/img/education/Square.svg" alt="Square">
+						</div>
+					</div>
+				</div>
+				<div class="education-container_rightSteps">
+					<div class="education-left-info">
+						<h1 class="education-left-info-main-tag">English language</h1>
+						<p class="education-left-info-2-tag">Course</p>
+					</div>
+					<div class="education-left-info">
+						<h1 class="education-left-info-main-tag">Management</h1>
+						<p class="education-left-info-2-tag">College</p>
+					</div>
+					<div class="education-left-info">
+						<h1 class="education-left-info-main-tag">Economist</h1>
+						<p class="education-left-info-2-tag">Technical school</p>
 					</div>
 				</div>
 			</div>
@@ -320,17 +332,23 @@
 			<form method="POST" name="feedback" action="https://TEST"></form>
 			<div class="contactMe_Wrapper-Container">
 				<div class="contactMe_wrapper-left">
-					<div class="contactMe_form-nameEmail">
-						<input id="changeThemeForm" type="text" placeholder="Name" class="contactMe_form-name darkThemeForm">
-						<input id="changeThemeForm2" type="email" placeholder="Email" class="contactMe_form-email darkThemeForm">
-					</div>
-					<div class="contactMe_form-title-container">
-						<input id="changeThemeForm3" type="text" placeholder="Title" class="contactMe_form-title darkThemeForm">
-					</div>
-					<div class="contactMe_form-message-container">
-						<input id="changeThemeForm4" class="contactMe_form-message darkThemeForm" type="text" placeholder="Message">
-					</div>
-					<button class="contactMe_form-submit" type="submit">Send Message </button>
+					<form method="POST" name="feedback" action="/API/form">
+
+						<div class="contactMe_form-nameEmail">
+							<input required id="changeThemeForm" type="text" placeholder="Name" name="name" class="contactMe_form-name darkThemeForm form-contactMe">
+							<input required id="changeThemeForm2" type="email" placeholder="Email" name="mail" class="contactMe_form-email darkThemeForm form-contactMe">
+						</div>
+						<div class="contactMe_form-title-container">
+							<input required id="changeThemeForm3" type="text" placeholder="Title" name="title" class="contactMe_form-title darkThemeForm form-contactMe">
+						</div>
+						<div class="contactMe_form-message-container">
+							<input required id="changeThemeForm4" class="contactMe_form-message darkThemeForm form-contactMe" name="message" type="text" placeholder="Message">
+						</div>
+						<div class="form-button">
+							<button class="contactMe_form-submit" type="submit">Send Message </button>
+						</div>
+
+					</form>
 				</div>
 				<div class="contactMe_wrapper-right">
 					<div class="contactMe_text">
@@ -360,7 +378,7 @@
 		<footer class="footer">
 			<div class="footer_container">
 				<h1>Get In Touch</h1>
-				<p>Let’s Start a Conversation</p>
+				<p class="footer_container-text">Let’s Start a Conversation</p>
 				<div class="footer_container_contactMe">
 					<a href="https://www.behance.net/edwardtrubin" target="_blank">
 						<img src="assets/img/footer/Behance.svg" alt="Behance">
@@ -378,8 +396,6 @@
 	</div>
 
 	<script src="assets/js/index.js"></script>
-	<script src="assets/js/countUp.min.js" type="module"></script>
-	<script src="assets/js/counter.js" type="module"></script>
 	<script src="assets/js/ThemeSwither.js"></script>
 	<script src="assets/js/burgerMenu.js"></script>
 	<script src="assets/js/links.js"></script>

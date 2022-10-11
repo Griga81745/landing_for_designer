@@ -31,8 +31,13 @@ h1{
 
 }
 
+.display-none{
+  display: none;
+}
+
 .header_container{
-  width: 1060px;
+  //width: 1060px;
+  width: 55%;
   height: 30px;
   margin: 0 auto;
   margin-top: 60px;
@@ -50,6 +55,7 @@ h1{
     height: 30px;
     transition-duration: 0.5s;
     cursor: pointer;
+    overflow: hidden;
 
     .burgerMenuICO-1{
       width: 40px;
@@ -136,9 +142,9 @@ h1{
   }
 }
 
+
+
 .resume_container{
-  width: 560px;
-  height: 625px;
   margin: 0 auto;
   margin-top: 54px;
   text-align: center;
@@ -160,7 +166,8 @@ h1{
     }
   }
   .resume_container-contacts{
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -168,11 +175,12 @@ h1{
     margin-top: 40px;
   }
   .resume_button-link{
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     margin: 0 auto;
   }
   .resume_button{
-    width: 360px;
+    width: 100%;
     height: 60px;
     border: 2px solid $Yellow;
     margin: 0 auto;
@@ -198,7 +206,7 @@ h1{
 }
 
 .aboutMe_container {
-  width: 779px;
+  width: 100%;
   height: 80px;
   margin: 0 auto;
   margin-top: 100px;
@@ -225,13 +233,10 @@ h1{
 }
 
 .aboutMe_container-wrapper{
-  width: 779px;
-  height: 600px;
-  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   .aboutMe_container-wrapper-left{
-    width: 50%;
-    height: 100%;
     .aboutMe_text-left-up{
       font-family: "Montserrat", sans-serif;
       font-weight: 300;
@@ -240,12 +245,8 @@ h1{
       letter-spacing: 0.05em;
     }
     .aboutMe_container-wrapper-left-up{
-      width: 100%;
-      height: 40%;
     }
     .aboutMe_container-wrapper-left-down{
-      width: 100%;
-      height: 60%;
       .imageMan_container{
         .imageMan{
           display: flex;
@@ -255,15 +256,13 @@ h1{
     }
   }
   .aboutMe_container-wrapper-right{
-    width: 50%;
-    height: 100%;
     .aboutMe_container-wrapper-right-up{
-      width: 100%;
-      height: 40%;
       .aboutMe_container-wrapper-right-up-information-text{
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 24px;
+        margin: 0;
+        padding: 0;
       }
       .aboutMe_information-user{
         display: flex;
@@ -278,8 +277,6 @@ h1{
       }
     }
     .aboutMe_container-wrapper-right-down{
-      width: 100%;
-      height: 60%;
     }
   }
 }
@@ -289,6 +286,7 @@ h1{
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 25px;
+  margin-top: 50px;
 }
 
 .aboutMe_right-languages-text{
@@ -313,87 +311,86 @@ h1{
   }
 }
 
-.expertiseArea{
+.skills-Container{
+  margin: 0 auto;
+  margin-top: 40px;
 
-  .expertiseArea_container-tags{
-    width: 760px;
-    height: 80px;
-    margin: 0 auto;
-    margin-top: 80px;
-    text-align: center;
-
-    .expertiseArea_container-tags--smallTag{
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-    }
-
-    .expertiseArea_container-tags--mainTag{
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700;
-      font-size: 32px;
-      margin-top: 20px;
-    }
-  }
-
-  .expertiseArea_container-graphics{
-    width: 760px;
-    height: 320px;
-    margin: 0 auto;
-    display: flex;
-    margin-top: 40px;
-
-    .expertiseArea_container-graphics-container--left{
-      width: 380px;
-      height: 100%;
-    }
-    .expertiseArea_container-graphics-container--right{
-      width: 380px;
-      height: 100%;
-    }
-  }
-}
-
-.mainTag-graphic{
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-}
-
-.graphic-container{
-  width: 330px;
-  height: 60px;
-  margin-left: 30px;
-  margin-top: 24px;
-
-  .graphic-container-text{
-    display: flex;
+  .mySkills-tag{
     font-family: "Montserrat", sans-serif;
+    font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    justify-content: space-between;
-    >p{
-      font-family: "Montserrat", sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 40px;
+    text-align: center;
+  }
+  .mySkill-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .mySkill-container-skill{
+      width: 160px;
+      height: 160px;
+      border: 1px solid $Yellow;
+      border-radius: 17px;
+      margin-left: 20px;
+      margin-top: 20px;
+      .mySkill-container-skill-circle{
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        margin: 0 auto;
+        margin-top: 25px;
+        display: flex;
+        >img{
+          margin: 0 auto;
+          width: 35px;
+        }
+      }
+      .mySkill-container-skill-tag{
+        text-align: center;
+        margin-top: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
   }
-  .graphic-container-strip{
-    width: 330px;
-    height: 30px;
-    border: 2px solid $Yellow;
-    margin-top: 11px;
-    overflow: hidden;
+}
+
+.mySkills-tags{
+  text-align: center;
+  margin-top: 80px;
+  >h1:nth-child(1){
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
   }
-  .graphic-container-strip-background{
-    height: 30px;
-    width: 0px;
-    background-color: $Yellow;
-    transition-duration: 1s;
-    transform: translateX(-244px);
+  >h1:nth-child(2){
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 31px;
+    margin-top: 20px;
   }
+}
+
+.mySkill-container-skill-circle-color-dark{
+  background-color: #282828;
+}
+
+.mySkill-container-skill-circle-white{
+  background: #CACACA;
+}
+
+.notion-changeColor{
+  filter: invert(1);
 }
 
 #strip-background-1-active{
@@ -433,9 +430,6 @@ h1{
 
 .education{
   .education-containerText{
-    width: 539px;
-    height: 110px;
-    margin: 0 auto;
     margin-top: 80px;
     text-align: center;
     .education-containerText_tag-small{
@@ -451,15 +445,14 @@ h1{
     }
   }
   .education-containerWrapper{
-    width: 539px;
-    height: 300px;
-    margin: 0 auto;
     display: flex;
+    justify-content: center;
+    margin-top: 46px;
+    margin-right: 60px;
     .education-container_leftSteps{
-      width: 179px;
-      height: 100%;
       text-align: right;
       display: flex;
+      flex-wrap: wrap;
       flex-direction: column;
       justify-content: space-between;
       .education-left-info-main-tag{
@@ -489,8 +482,6 @@ h1{
       }
     }
     .education-container_rightSteps{
-      width: 179px;
-      height: 100%;
       text-align: left;
       display: flex;
       flex-direction: column;
@@ -512,7 +503,7 @@ h1{
 
 
 .works-container-tag{
-  width: 760px;
+  width: 100%;
   height: 80px;
   margin: 0 auto;
   text-align: center;
@@ -531,29 +522,26 @@ h1{
 }
 
 .works-container{
-  width: 760px;
-  height: 416px;
-  margin: 0 auto;
   .works_flex-containerUp{
-    width: 100%;
-    height: 172px;
     margin: 0 auto;
-    margin-top: 35px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     .imageContainer{
       border: 2px solid $Yellow;
       border-radius: 5px;
       cursor: pointer;
+      width: 225px;
+      height: 168px;
+      overflow: hidden;
+      margin-left: 34px;
+      margin-top: 20px;
     }
   }
 }
 
 
 .contactMe_tag-container{
-  width: 760px;
-  height: 80px;
-  margin: 0 auto;
   text-align: center;
   margin-top: 70px;
   .contactMe_tag-container-small{
@@ -570,17 +558,13 @@ h1{
 }
 
 .contactMe_Wrapper-Container{
-  width: 760px;
-  height: 390px;
-  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 40px;
+  gap: 50px;
   .contactMe_wrapper-left{
-    width: 77%;
-    height: 100%;
     .contactMe_form-nameEmail{
-      width: 450px;
-      height: 40px;
       .contactMe_form-name{
         width: 190px;
         height: 40px;
@@ -600,8 +584,6 @@ h1{
       }
     }
     .contactMe_form-title-container{
-      width: 100%;
-      height: 50px;
       margin-top: 20px;
       .contactMe_form-title{
         width: 400px;
@@ -613,8 +595,6 @@ h1{
       }
     }
     .contactMe_form-message-container{
-      width: 100%;
-      height: 180px;
       margin-top: 20px;
       .contactMe_form-message{
         width: 400px;
@@ -639,11 +619,13 @@ h1{
       font-size: 16px;
       line-height: 31px;
       margin-top: 20px;
+      cursor: pointer;
+      &:hover{
+        background-color: #E79822;
+      }
     }
   }
   .contactMe_wrapper-right{
-    width: 23%;
-    height: 100%;
     .contactMe_text{
       margin-bottom: 20px;
       .contactMe_text-Big{
@@ -653,6 +635,7 @@ h1{
         font-size: 20px;
         line-height: 24px;
         margin-top: 5px;
+        margin-bottom: 5px;
       }
       .contactMe_text-small{
         font-family: "Montserrat", sans-serif;
@@ -678,6 +661,9 @@ h1{
     margin: 0 auto;
     border: 1px solid $Yellow;
     text-align: center;
+    .footer_container-text{
+      margin-bottom: 20px;
+    }
     >h1{
       color: $dark;
       font-family: "Montserrat", sans-serif;
@@ -736,5 +722,136 @@ h1{
     font-weight: 300;
     font-size: 15px;
     line-height: 31px;
+  }
+}
+
+//-----------------------------------Mobile Adaptation----------------------------------------------//
+
+@media screen and (max-width: 900px) {
+  .header_container{
+    overflow: visible;
+    width: 100%;
+  }
+
+  #burgerMenuNames{
+    >a>h1{
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header_container {
+    overflow: visible;
+    width: 95%;
+  }
+  #header{
+    width: 100%;
+    .burgerMenuNames{
+      display: none;
+    }
+  }
+
+  .burgerMenuMobile{
+    position: relative;
+    height: 520px;
+    margin: 0px;
+    background-color: $Yellow;
+    display: block;
+    .header_container-burgerMenuICO{
+      margin-left: 45px;
+      position: relative;
+      top: 65px;
+
+      >#burgerMenuICO-1{
+        border: 3px solid white;
+      }
+      >#burgerMenuICO-2{
+        border: 3px solid white;
+      }
+      >#burgerMenuICO-3{
+        border: 3px solid white;
+      }
+    }
+    #burgerMenuNames{
+      display: block;
+      position: relative;
+      top: 150px;
+      right: 150px;
+      margin-left: 45%;
+      >a>h1{
+        color: white;
+        margin-top: 20px;
+      }
+    }
+    #switchTheme{
+      margin-top: 400px;
+      margin-left: 45px;
+    }
+  }
+  //----------------Header-----------------------//
+
+  #aboutMe_container-wrapper-left{
+    height: 250px;
+    text-align: center;
+    .aboutMe_container-wrapper-left-down{
+      display: none;
+    }
+  }
+
+  .aboutMe_container-wrapper{
+    display: block;
+  }
+
+  #works{
+  }
+
+  #education-containerWrapper{
+    margin-right: 20px;
+  }
+  //---------------------Resume-------------------//
+
+  #resume_name{
+    font-size: 32px;
+  }
+
+  //----------------AboutMe-----------------------//
+  //---------------Get in touch-------------------//
+
+
+}
+@media screen and (max-width: 638px) {
+  .contactMe_wrapper-right{
+    margin-right: 170px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form-button{
+    display: flex;
+    justify-content: center;
+  }
+  .contactMe_wrapper-right{
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  #changeThemeForm{
+    width: 120px;
+  }
+
+  #changeThemeForm2{
+    width: 150px;
+  }
+
+  #changeThemeForm3{
+    width: 300px;
+    display: flex;
+  }
+
+  #changeThemeForm4{
+    width: 300px;
   }
 }
